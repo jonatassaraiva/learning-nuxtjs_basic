@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <label for="input">Number:</label>
     <input type="text" v-model="userId">
     <button @click="onLoadUser">Load User</button>
   </div>
@@ -31,4 +32,3 @@ export default {
   text-align: center;
 }
 </style>
-
