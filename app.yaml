@@ -1,0 +1,6 @@
+# [START REF: https://cloud.google.com/appengine/docs/standard/nodejs/config/appref]
+runtime: nodejs10
+
+env_variables:
+  NODE_ENV: 'production'
+# [END]
