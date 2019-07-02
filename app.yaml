@@ -1,9 +1,6 @@
 # [START REF: https://cloud.google.com/appengine/docs/standard/nodejs/config/appref]
 runtime: nodejs10
 
-# The _SERVICE is replace by gulp on CI/CD
-service: _SERVICE
-
 env_variables:
   NODE_ENV: 'production'
 # [END]

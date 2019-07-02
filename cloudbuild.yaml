@@ -2,9 +2,6 @@ steps:
 # Install
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-# Replaces
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'replaceEnvs']
 # Build
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
