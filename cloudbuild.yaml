@@ -1,6 +1,8 @@
 steps:
 #Info
   - name: gcr.io/cloud-builders/git
+    args: ["fetch", "--unshallow"]
+  - name: gcr.io/cloud-builders/git
     entrypoint: /bin/bash
     args: ["-c", "echo ${_MAJOR}.${_MINOR}.${_PATCH}.$(git rev-list --count ${BRANCH_NAME}) > IMAGE_TAG"]
 # Install
