@@ -1,18 +1,21 @@
 {
   "name": "learning-nuxtjs_basic",
-  "version": "1.0.0",
+  "version": "1.0.0-build",
   "description": "Learning Nuxt.js - Basic",
   "author": "Jonatas Saraiva",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "replaceEnvs": "gulp",
     "start": "nuxt start"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0",
     "nodemon": "^1.18.9"
   }
 }
