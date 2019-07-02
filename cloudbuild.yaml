@@ -1,8 +1,12 @@
 steps:
+#Info
+  - name: gcr.io/cloud-builders/git
+    entrypoint: /bin/bash
+    args: ["-c", "echo ${_MAJOR}.${_MINOR}.${_PATCH}.$(git rev-list --count ${BRANCH_NAME}) > IMAGE_TAG"]
 # Install
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-# Install
+# Replaces
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'replaceEnvs']
 # Build
