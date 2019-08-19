@@ -1,6 +1,5 @@
 # learning-nuxtjs_basic
-
-> Learning Nuxt.js - Basic
+Learning Nuxt.js - Basic
 
 ## Build Setup
 
